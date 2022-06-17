@@ -33,7 +33,13 @@
             >Web<span class="logo--black">Studio</span>
           </a>
 
-          <button class="menu-button" aria-expanded="false" type="button" data-menu-button>
+          <button
+            class="menu-button"
+            aria-expanded="false"
+            aria-controls="menu-button"
+            type="button"
+            data-menu-button
+          >
             <svg
               class="menu-button__icon"
               width="40"
@@ -45,15 +51,15 @@
             </svg>
           </button>
 
-          <div class="mobile-menu" data-menu>
+          <div class="mobile-menu" id="menu-button" data-menu>
             <ul class="mobile-menu__list">
               <li class="mobile-menu__item">
-                <a href="./index.html" class="mobile-menu__link mobile-menu__link--active"
+                <a href="./index.html" class="mobile-menu__link"
                   >Студия</a
                 >
               </li>
               <li class="mobile-menu__item">
-                <a href="./portfolio.html" class="mobile-menu__link">Портфолио</a>
+                <a href="./portfolio.html" class="mobile-menu__link mobile-menu__link--active">Портфолио</a>
               </li>
               <li class="mobile-menu__item">
                 <a href="#" class="mobile-menu__link">Контакты</a>
