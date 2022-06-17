@@ -1,13 +1,8 @@
-// @import "./utils/module";
-// @import "./base/module";
-// @import "./components/module";
-// @import "./layout/module";
-
 // utils
 @import './utils/variables';
 @import './utils/body';
 @import './utils/visually-hidden';
-// @import "./utils/placeholders";
+@import './utils/mixins';
 
 // base
 @import './base/common';
