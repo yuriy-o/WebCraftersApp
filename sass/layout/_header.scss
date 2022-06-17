@@ -164,3 +164,16 @@
     margin-right: 10px;
   }
 }
+.header__icon-tablet-email {
+  @include mq(tablet-only) {
+    width: 14px;
+    height: 10px;
+  }
+}
+
+.header__icon-tablet-phone {
+  @include mq(tablet-only) {
+    width: 10px;
+    height: 14px;
+  }
+}
