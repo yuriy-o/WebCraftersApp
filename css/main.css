@@ -158,7 +158,7 @@ textarea {
   position: relative;
 }
 
-l .card__link:hover .scene__wrapper,
+.card__link:hover .scene__wrapper,
 .card__link:focus .scene__wrapper {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);

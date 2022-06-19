@@ -17,7 +17,8 @@
   transform-style: preserve-3d;
   cursor: pointer;
   position: relative;
-  l .card__link:hover &,
+
+  .card__link:hover &,
   .card__link:focus & {
     transform: rotateY(180deg);
   }
