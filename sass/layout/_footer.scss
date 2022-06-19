@@ -4,12 +4,29 @@
 }
 
 .footer__container {
-  display: flex;
-  align-items: baseline;
+  text-align: center;
+  // display: block;
+
+  @include mq(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+
+  @include mq(desktop) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .address__container {
-  margin-right: 70px;
+  @include mq(mobile-only) {
+    text-align: center;
+  }
+  @include mq(desktop) {
+    margin-right: 70px;
+  }
 }
 
 .footer__logo {
@@ -21,8 +38,18 @@
   color: var(--secondary-text-color);
 }
 
+.address {
+  @include mq(not-desktop) {
+    margin-bottom: 60px;
+  }
+}
+
 .address__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+
+  @include mq(desktop) {
+    margin-bottom: 9px;
+  }
 }
 
 .address__link {
@@ -46,7 +73,13 @@
 }
 
 .social__container {
-  margin-right: auto;
+  @include mq(mobile-only) {
+    margin-bottom: 60px;
+  }
+
+  @include mq(desktop) {
+    margin-right: auto;
+  }
 }
 
 .social__caption {
@@ -55,6 +88,10 @@
   text-transform: uppercase;
   color: var(--secondary-text-color);
   margin-bottom: 20px;
+
+  @include mq(not-desktop) {
+    text-align: center;
+  }
 }
 
 .social__link--footer {
@@ -62,6 +99,11 @@
   background-color: var(--footer-background-icon-color);
 
   transition: background-color var(--transition-duration) var(--transition-timing-function);
+}
+
+.subscribe {
+  // text-align: center;
+  // display: block;
 }
 
 .subscribe__caption {
@@ -73,12 +115,18 @@
 }
 
 .subscribe__form {
-  display: flex;
-  align-items: center;
+  display: block;
+
+  @include mq(desktop) {
+    display: flex;
+    align-items: center;
+  }
 }
 .subscribe__input {
-  width: 358px;
+  display: block;
+  width: 100%;
   min-height: 50px;
+
   padding: 15px 16px;
   margin-right: 12px;
   border-radius: 4px;
@@ -99,6 +147,16 @@
   &:hover {
     border-color: var(--accent-color);
     outline: 0;
+  }
+
+  @include mq(tablet) {
+    width: 450px;
+  }
+  @include mq(desktop) {
+    width: 358px;
+  }
+  @include mq(not-desktop) {
+    margin-bottom: 20px;
   }
 }
 
