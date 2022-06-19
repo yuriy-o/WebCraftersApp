@@ -72,7 +72,7 @@
   }
 
   @include mq(mobile-only) {
-    width: 450px;
+    width: 100%;
   }
   @include mq(tablet) {
     width: 354px;
