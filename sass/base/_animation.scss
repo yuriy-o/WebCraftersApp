@@ -1,8 +1,11 @@
 // Portfolio CodePen Home Card slide flip
 
 .scene {
-  width: 370px;
-  height: 294px;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  // width: 370px;
+  // height: 294px;
 
   perspective: 600px;
 }
