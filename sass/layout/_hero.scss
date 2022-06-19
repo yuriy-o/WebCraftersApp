@@ -1,34 +1,58 @@
 .hero {
   background-color: var(--dark-background-color);
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+
+  padding-top: 118px;
+  padding-bottom: 118px;
+  margin-right: auto;
+  margin-left: auto;
 
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../images/business-death-to-enemies.jpg');
-  max-width: 1600px;
-  height: 600px;
-  margin-right: auto;
-  margin-left: auto;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  max-width: 480px;
+  height: 400px;
+
+  @include mq(tablet) {
+    max-width: 768px;
+    height: 400px;
+  }
+  @include mq(desktop) {
+    max-width: 1600px;
+    height: 600px;
+
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .main-title {
-  font-size: 44px;
   font-weight: 900;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
+
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
+
+  @include mq(desktop) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero__main-title {
   margin-bottom: 30px;
   margin-right: auto;
   margin-left: auto;
-  width: 696px;
+  width: 360px;
 
   color: var(--secondary-text-color);
+
+  @include mq(desktop) {
+    width: 696px;
+  }
 }
