@@ -336,8 +336,8 @@ textarea {
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
   opacity: 1;
-  width: 528px;
-  min-height: 581px;
+  width: 450px;
+  min-height: 609px;
   padding: 40px;
   background-color: var(--main-background-color);
   -webkit-box-shadow: var(--card-shadow);
@@ -347,6 +347,14 @@ textarea {
   transition: opacity var(--transition-duration) var(--transition-timing-function), -webkit-transform var(--transition-duration) var(--transition-timing-function);
   transition: transform var(--transition-duration) var(--transition-timing-function), opacity var(--transition-duration) var(--transition-timing-function);
   transition: transform var(--transition-duration) var(--transition-timing-function), opacity var(--transition-duration) var(--transition-timing-function), -webkit-transform var(--transition-duration) var(--transition-timing-function);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-wrapper {
+    width: 528px;
+    min-height: 581px;
+    padding: 40px;
+  }
 }
 
 .form__title {
@@ -720,6 +728,12 @@ textarea {
 }
 
 @media screen and (max-width: 767.98px) {
+  .navigation {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
   .navigation__logo {
     display: block;
     padding-top: 16px;
@@ -1022,8 +1036,13 @@ textarea {
   margin-bottom: 30px;
   margin-right: auto;
   margin-left: auto;
-  width: 360px;
   color: var(--secondary-text-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__main-title {
+    width: 360px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1771,5 +1790,10 @@ textarea {
 .subscribe__icon {
   fill: currentColor;
   margin-left: 10px;
+}
+
+.subscribe__form-button {
+  margin-left: auto;
+  margin-right: auto;
 }
 /*# sourceMappingURL=main.css.map */

@@ -29,9 +29,15 @@
   transform: translate(-50%, -50%) scale(1);
   opacity: 1;
 
-  width: 528px;
-  min-height: 581px;
+  width: 450px;
+  min-height: 609px;
   padding: 40px;
+
+  @include mq(desktop) {
+    width: 528px;
+    min-height: 581px;
+    padding: 40px;
+  }
 
   background-color: var(--main-background-color);
   box-shadow: var(--card-shadow);

@@ -100,12 +100,11 @@
   background-color: rgba(33, 33, 33, 0.2);
 }
 
-// .navigation {
-//   display: flex;
-// }
-// .header__container {
-//   display: flex;
-// }
+.navigation {
+  @include mq(mobile-only) {
+    width: 100%;
+  }
+}
 
 .navigation__logo {
   @include mq(mobile-only) {
