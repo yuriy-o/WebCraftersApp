@@ -1,19 +1,38 @@
 .card {
-  display: flex;
-  flex-wrap: wrap;
+  @include mq(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .card__item {
-  width: calc((100% - 2 * 30px) / 3);
-  margin-right: 30px;
-  margin-bottom: 30px;
+  width: 100%;
 
-  &:nth-child(3n) {
-    margin-right: 0;
+  @include mq(tablet-only) {
+    width: calc((100% - 1 * 30px) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
   }
+  @include mq(desktop) {
+    width: calc((100% - 2 * 30px) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
 
-  &:nth-last-child(-n + 3) {
-    margin-bottom: 0;
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n + 3) {
+      margin-bottom: 0;
+    }
   }
 }
 
