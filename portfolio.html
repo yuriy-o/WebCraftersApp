@@ -274,13 +274,77 @@
             <li class="card__item">
               <a class="card__link" href="#">
                 <div class="card__thumb">
-                  <img
-                    class="card__image"
-                    src="./images/portfolio/photos-our-portfolio-1_lg.jpg"
-                    alt="Разработка веб-сайта Технокряк"
-                    width="370"
-                    height="294"
-                  />
+
+              <picture>
+                <!-- Набір зображень для десктопних екранів -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/portfolio/photos-our-portfolio-1_lg.webp    1x,
+                    ./images/portfolio/photos-our-portfolio-1_lg@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/portfolio/photos-our-portfolio-1_lg.jpg    1x,
+                    ./images/portfolio/photos-our-portfolio-1_lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- Набір зображень для планшетних екранів -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/portfolio/photos-our-portfolio-1_md.webp    1x,
+                    ./images/portfolio/photos-our-portfolio-1_md@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/portfolio/photos-our-portfolio-1_md.jpg    1x,
+                    ./images/portfolio/photos-our-portfolio-1_md@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- Набір зображень для мобільних екранів -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/portfolio/photos-our-portfolio-1_sm.webp    1x,
+                    ./images/portfolio/photos-our-portfolio-1_sm@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)" 
+                  srcset="
+                    ./images/portfolio/photos-our-portfolio-1_sm.jpg    1x,
+                    ./images/portfolio/photos-our-portfolio-1_sm@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
+                <img
+                  class="card__image"
+                  src="./images/portfolio/photos-our-portfolio-1_sm.jpg"
+                
+                   alt="Разработка веб-сайта Технокряк"
+                  width="450"
+                  height="294"
+                  loading="lazy"
+                />
+              </picture>
+
+
+
+                  
                   <div class="card__overlay">
                     <p class="card__description">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -299,13 +363,73 @@
               <a class="card__link" href="#">
                 <div class="scene">
                   <div class="scene__wrapper">
-                    <img
-                      class="card__image"
-                      src="./images/portfolio/photos-our-portfolio-2_lg.jpg"
-                      alt="Разработка дизайна постера"
-                      width="370"
-                      height="294"
-                    />
+              <picture>
+                <!-- Набір зображень для десктопних екранів -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/portfolio/photos-our-portfolio-2_lg.webp    1x,
+                    ./images/portfolio/photos-our-portfolio-2_lg@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/portfolio/photos-our-portfolio-2_lg.jpg    1x,
+                    ./images/portfolio/photos-our-portfolio-2_lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- Набір зображень для планшетних екранів -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/portfolio/photos-our-portfolio-2_md.webp    1x,
+                    ./images/portfolio/photos-our-portfolio-2_md@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/portfolio/photos-our-portfolio-2_md.jpg    1x,
+                    ./images/portfolio/photos-our-portfolio-2_md@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- Набір зображень для мобільних екранів -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/portfolio/photos-our-portfolio-2_sm.webp    1x,
+                    ./images/portfolio/photos-our-portfolio-2_sm@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)" 
+                  srcset="
+                    ./images/portfolio/photos-our-portfolio-2_sm.jpg    1x,
+                    ./images/portfolio/photos-our-portfolio-2_sm@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
+                <img
+                  class="card__image"
+                  src="./images/portfolio/photos-our-portfolio-2_sm.jpg"                
+                  alt="Разработка дизайна постера"
+                  width="450"
+                  height="294"
+                  loading="lazy"
+                />
+              </picture>
+
+                   
                     <div class="scene__face scene__face--back">
                       <p class="card__description">
                         Не дивіться на Україну, як на землю своїх батьків. Дивіться на неї, як на
@@ -330,13 +454,71 @@
             <li class="card__item">
               <a class="card__link" href="#">
                 <div class="card__thumb">
-                  <img
-                    class="card__image"
-                    src="./images/portfolio/photos-our-portfolio-3_lg.jpg"
-                    alt="Создание приложения для ресторана Seafood"
-                    width="370"
-                    height="294"
-                  />
+              <picture>
+                <!-- Набір зображень для десктопних екранів -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/portfolio/photos-our-portfolio-3_lg.webp    1x,
+                    ./images/portfolio/photos-our-portfolio-3_lg@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/portfolio/photos-our-portfolio-3_lg.jpg    1x,
+                    ./images/portfolio/photos-our-portfolio-3_lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- Набір зображень для планшетних екранів -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/portfolio/photos-our-portfolio-3_md.webp    1x,
+                    ./images/portfolio/photos-our-portfolio-3_md@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/portfolio/photos-our-portfolio-3_md.jpg    1x,
+                    ./images/portfolio/photos-our-portfolio-3_md@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- Набір зображень для мобільних екранів -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/portfolio/photos-our-portfolio-3_sm.webp    1x,
+                    ./images/portfolio/photos-our-portfolio-3_sm@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)" 
+                  srcset="
+                    ./images/portfolio/photos-our-portfolio-3_sm.jpg    1x,
+                    ./images/portfolio/photos-our-portfolio-3_sm@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
+                <img
+                  class="card__image"
+                  src="./images/portfolio/photos-our-portfolio-3_sm.jpg"                
+                  alt="Создание приложения для ресторана Seafood"
+                  width="450"
+                  height="294"
+                  loading="lazy"
+                />
+              </picture>
                   <div class="card__overlay">
                     <p class="card__description">
                       Не той українець, у кого батьки українці, а той, у кого діти українці.</p>
@@ -353,14 +535,72 @@
             <li class="card__item">
               <a class="card__link" href="#">
                 <div class="card__thumb">
-                  <img
-                    class="card__image"
-                    src="./images/portfolio/photos-our-portfolio-4_lg.jpg"
-                    alt="Маркетинг для проекта Prime"
-                    width="370"
-                    height="294"
-                  />
-                  <div class="card__overlay">
+              <picture>
+                <!-- Набір зображень для десктопних екранів -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/portfolio/photos-our-portfolio-4_lg.webp    1x,
+                    ./images/portfolio/photos-our-portfolio-4_lg@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/portfolio/photos-our-portfolio-4_lg.jpg    1x,
+                    ./images/portfolio/photos-our-portfolio-4_lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- Набір зображень для планшетних екранів -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/portfolio/photos-our-portfolio-4_md.webp    1x,
+                    ./images/portfolio/photos-our-portfolio-4_md@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/portfolio/photos-our-portfolio-4_md.jpg    1x,
+                    ./images/portfolio/photos-our-portfolio-4_md@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- Набір зображень для мобільних екранів -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/portfolio/photos-our-portfolio-4_sm.webp    1x,
+                    ./images/portfolio/photos-our-portfolio-4_sm@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)" 
+                  srcset="
+                    ./images/portfolio/photos-our-portfolio-4_sm.jpg    1x,
+                    ./images/portfolio/photos-our-portfolio-4_sm@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
+                <img
+                  class="card__image"
+                  src="./images/portfolio/photos-our-portfolio-4_sm.jpg"                
+                  alt="Маркетинг для проекта Prime"
+                  width="450"
+                  height="294"
+                  loading="lazy"
+                />
+              </picture>
+                 4 <div class="card__overlay">
                     <p class="card__description">
                       Оті дурні, що кричать "націоналіст!", не розуміють і ніколи не зрозуміють, що
                       я зумів об'єднати любов до мого народу з любов'ю до всіх народів світу!</p>
@@ -376,14 +616,72 @@
             <li class="card__item">
               <a class="card__link" href="#">
                 <div class="card__thumb">
-                  <img
-                    class="card__image"
-                    src="./images/portfolio/photos-our-portfolio-5_lg.jpg"
-                    alt="Разработка и запуск приложения Boxes"
-                    width="370"
-                    height="294"
-                  />
-                  <div class="card__overlay">
+                  <picture>
+                <!-- Набір зображень для десктопних екранів -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/portfolio/photos-our-portfolio-5_lg.webp    1x,
+                    ./images/portfolio/photos-our-portfolio-5_lg@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/portfolio/photos-our-portfolio-5_lg.jpg    1x,
+                    ./images/portfolio/photos-our-portfolio-5_lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- Набір зображень для планшетних екранів -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/portfolio/photos-our-portfolio-5_md.webp    1x,
+                    ./images/portfolio/photos-our-portfolio-5_md@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/portfolio/photos-our-portfolio-5_md.jpg    1x,
+                    ./images/portfolio/photos-our-portfolio-5_md@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- Набір зображень для мобільних екранів -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/portfolio/photos-our-portfolio-5_sm.webp    1x,
+                    ./images/portfolio/photos-our-portfolio-5_sm@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)" 
+                  srcset="
+                    ./images/portfolio/photos-our-portfolio-5_sm.jpg    1x,
+                    ./images/portfolio/photos-our-portfolio-5_sm@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
+                <img
+                  class="card__image"
+                  src="./images/portfolio/photos-our-portfolio-5_sm.jpg"                
+                  alt="Разработка и запуск приложения Boxes"
+                  width="450"
+                  height="294"
+                  loading="lazy"
+                />
+              </picture>
+                                    <div class="card__overlay">
                     <p class="card__description">
                       Ніхто нам не збудує держави, коли ми її самі не збудуємо, і ніхто з нас не
                       зробить нації, коли ми самі нацією не схочемо бути.
@@ -400,13 +698,71 @@
             <li class="card__item">
               <a class="card__link" href="#">
                 <div class="card__thumb">
-                  <img
-                    class="card__image"
-                    src="./images/portfolio/photos-our-portfolio-6_lg.jpg"
-                    alt="Проектировка сайта «Inspiration has no Borders»"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                <!-- Набір зображень для десктопних екранів -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/portfolio/photos-our-portfolio-6_lg.webp    1x,
+                    ./images/portfolio/photos-our-portfolio-6_lg@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/portfolio/photos-our-portfolio-6_lg.jpg    1x,
+                    ./images/portfolio/photos-our-portfolio-6_lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- Набір зображень для планшетних екранів -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/portfolio/photos-our-portfolio-6_md.webp    1x,
+                    ./images/portfolio/photos-our-portfolio-6_md@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/portfolio/photos-our-portfolio-6_md.jpg    1x,
+                    ./images/portfolio/photos-our-portfolio-6_md@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- Набір зображень для мобільних екранів -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/portfolio/photos-our-portfolio-6_sm.webp    1x,
+                    ./images/portfolio/photos-our-portfolio-6_sm@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)" 
+                  srcset="
+                    ./images/portfolio/photos-our-portfolio-6_sm.jpg    1x,
+                    ./images/portfolio/photos-our-portfolio-6_sm@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
+                <img
+                  class="card__image"
+                  src="./images/portfolio/photos-our-portfolio-6_sm.jpg"                
+                  alt="Проектировка сайта «Inspiration has no Borders»"
+                  width="450"
+                  height="294"
+                  loading="lazy"
+                />
+              </picture>                  
                   <div class="card__overlay">
                     <pre class="card__pre">
                          Для всіх ти мертва і смішна, 
@@ -428,13 +784,71 @@
             <li class="card__item">
               <a class="card__link" href="#">
                 <div class="card__thumb">
-                  <img
-                    class="card__image"
-                    src="./images/portfolio/photos-our-portfolio-7_lg.jpg"
-                    alt="Разработка дизайна Limited Edition"
-                    width="370"
-                    height="294"
-                  />
+                   <picture>
+                <!-- Набір зображень для десктопних екранів -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/portfolio/photos-our-portfolio-7_lg.webp    1x,
+                    ./images/portfolio/photos-our-portfolio-7_lg@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/portfolio/photos-our-portfolio-7_lg.jpg    1x,
+                    ./images/portfolio/photos-our-portfolio-7_lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- Набір зображень для планшетних екранів -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/portfolio/photos-our-portfolio-7_md.webp    1x,
+                    ./images/portfolio/photos-our-portfolio-7_md@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/portfolio/photos-our-portfolio-7_md.jpg    1x,
+                    ./images/portfolio/photos-our-portfolio-7_md@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- Набір зображень для мобільних екранів -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/portfolio/photos-our-portfolio-7_sm.webp    1x,
+                    ./images/portfolio/photos-our-portfolio-7_sm@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)" 
+                  srcset="
+                    ./images/portfolio/photos-our-portfolio-7_sm.jpg    1x,
+                    ./images/portfolio/photos-our-portfolio-7_sm@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
+                <img
+                  class="card__image"
+                  src="./images/portfolio/photos-our-portfolio-7_sm.jpg"                
+                  alt="Разработка дизайна Limited Edition"
+                  width="450"
+                  height="294"
+                  loading="lazy"
+                />
+              </picture>                    
                   <div class="card__overlay">
                     <p class="card__description">
                       Бути українцем – це значить бути постійно в стані доказування свого права на
@@ -452,13 +866,71 @@
             <li class="card__item">
               <a class="card__link" href="#">
                 <div class="card__thumb">
-                  <img
-                    class="card__image"
-                    src="./images/portfolio/photos-our-portfolio-8_lg.jpg"
-                    alt="Маркетинг для проекта LAB"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                <!-- Набір зображень для десктопних екранів -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/portfolio/photos-our-portfolio-8_lg.webp    1x,
+                    ./images/portfolio/photos-our-portfolio-8_lg@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/portfolio/photos-our-portfolio-8_lg.jpg    1x,
+                    ./images/portfolio/photos-our-portfolio-8_lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- Набір зображень для планшетних екранів -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/portfolio/photos-our-portfolio-8_md.webp    1x,
+                    ./images/portfolio/photos-our-portfolio-8_md@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/portfolio/photos-our-portfolio-8_md.jpg    1x,
+                    ./images/portfolio/photos-our-portfolio-8_md@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- Набір зображень для мобільних екранів -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/portfolio/photos-our-portfolio-8_sm.webp    1x,
+                    ./images/portfolio/photos-our-portfolio-8_sm@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)" 
+                  srcset="
+                    ./images/portfolio/photos-our-portfolio-8_sm.jpg    1x,
+                    ./images/portfolio/photos-our-portfolio-8_sm@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
+                <img
+                  class="card__image"
+                  src="./images/portfolio/photos-our-portfolio-8_sm.jpg"                
+                  alt="Маркетинг для проекта LAB"
+                  width="450"
+                  height="294"
+                  loading="lazy"
+                />
+              </picture>                     
                   <div class="card__overlay">
                     <p class="card__description">
                       Ми мусимо навчитися чути себе українцями – не галицькими, не буковинськими
@@ -476,13 +948,71 @@
             <li class="card__item">
               <a class="card__link" href="#">
                 <div class="card__thumb">
-                  <img
-                    class="card__image"
-                    src="./images/portfolio/photos-our-portfolio-9_lg.jpg"
-                    alt="Разработка и тестирование приложения Growing Business"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                <!-- Набір зображень для десктопних екранів -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/portfolio/photos-our-portfolio-9_lg.webp    1x,
+                    ./images/portfolio/photos-our-portfolio-9_lg@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/portfolio/photos-our-portfolio-9_lg.jpg    1x,
+                    ./images/portfolio/photos-our-portfolio-9_lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- Набір зображень для планшетних екранів -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/portfolio/photos-our-portfolio-9_md.webp    1x,
+                    ./images/portfolio/photos-our-portfolio-9_md@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/portfolio/photos-our-portfolio-9_md.jpg    1x,
+                    ./images/portfolio/photos-our-portfolio-9_md@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- Набір зображень для мобільних екранів -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/portfolio/photos-our-portfolio-9_sm.webp    1x,
+                    ./images/portfolio/photos-our-portfolio-9_sm@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)" 
+                  srcset="
+                    ./images/portfolio/photos-our-portfolio-9_sm.jpg    1x,
+                    ./images/portfolio/photos-our-portfolio-9_sm@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
+                <img
+                  class="card__image"
+                  src="./images/portfolio/photos-our-portfolio-9_sm.jpg"                
+                  alt="Разработка и тестирование приложения Growing Business"
+                  width="450"
+                  height="294"
+                  loading="lazy"
+                />
+              </picture>                      
                   <div class="card__overlay">
                     <p class="card__description">
                       «Біда України в тому, що нею керують ті, кому вона не потрібна».</p>
