@@ -140,7 +140,7 @@ textarea {
 .scene {
   width: 100%;
   max-width: 100%;
-  height: auto;
+  height: 100%;
   -webkit-perspective: 600px;
           perspective: 600px;
 }
@@ -178,6 +178,7 @@ l .card__link:hover .scene__wrapper,
   position: absolute;
   top: 0;
   left: 0;
+  height: 100%;
   padding: 63px 24px;
   background-color: var(--background-color-overlay);
   -webkit-transform: rotateY(180deg);
