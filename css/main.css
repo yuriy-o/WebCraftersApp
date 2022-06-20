@@ -357,8 +357,8 @@ textarea {
 
 @media screen and (min-width: 768px) {
   .modal-wrapper {
-    width: 528px;
-    min-height: 581px;
+    width: 450px;
+    min-height: 609px;
   }
 }
 

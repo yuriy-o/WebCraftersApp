@@ -46,8 +46,8 @@
   }
 
   @include mq(tablet) {
-    width: 528px;
-    min-height: 581px;
+    width: 450px;
+    min-height: 609px;
   }
 
   @include mq(desktop) {
