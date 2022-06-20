@@ -29,20 +29,29 @@
   transform: translate(-50%, -50%) scale(1);
   opacity: 1;
 
-  width: 450px;
-  min-height: 609px;
   padding: 40px;
+  border-radius: 4px;
+
+  background-color: var(--main-background-color);
+  box-shadow: var(--card-shadow);
+
+  transition: transform var(--transition-duration) var(--transition-timing-function),
+    opacity var(--transition-duration) var(--transition-timing-function);
+
+  width: 100%;
+
+  @include mq(mobile) {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  @include mq(tablet) {
+    width: 528px;
+    min-height: 581px;
+  }
 
   @include mq(desktop) {
     width: 528px;
     min-height: 581px;
-    padding: 40px;
   }
-
-  background-color: var(--main-background-color);
-  box-shadow: var(--card-shadow);
-  border-radius: 4px;
-
-  transition: transform var(--transition-duration) var(--transition-timing-function),
-    opacity var(--transition-duration) var(--transition-timing-function);
 }
