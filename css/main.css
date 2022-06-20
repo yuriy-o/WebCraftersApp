@@ -345,11 +345,12 @@ textarea {
   transition: opacity var(--transition-duration) var(--transition-timing-function), -webkit-transform var(--transition-duration) var(--transition-timing-function);
   transition: transform var(--transition-duration) var(--transition-timing-function), opacity var(--transition-duration) var(--transition-timing-function);
   transition: transform var(--transition-duration) var(--transition-timing-function), opacity var(--transition-duration) var(--transition-timing-function), -webkit-transform var(--transition-duration) var(--transition-timing-function);
-  width: 450px;
+  width: 100%;
 }
 
 @media screen and (min-width: 480px) {
   .modal-wrapper {
+    width: 450px;
     margin-left: 15px;
     margin-right: 15px;
   }
