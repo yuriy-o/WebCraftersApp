@@ -38,7 +38,7 @@
   transition: transform var(--transition-duration) var(--transition-timing-function),
     opacity var(--transition-duration) var(--transition-timing-function);
 
-  width: 100%;
+  width: 450px;
 
   @include mq(mobile) {
     margin-left: 15px;
