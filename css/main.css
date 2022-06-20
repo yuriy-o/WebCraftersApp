@@ -547,6 +547,7 @@ textarea {
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+  text-align: left;
 }
 
 @media screen and (min-width: 1200px) {

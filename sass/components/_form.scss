@@ -158,6 +158,8 @@
 
   color: var(--main-text-color);
 
+  text-align: left;
+
   @include mq(desktop) {
     font-size: 14px;
     line-height: 1.71;
