@@ -54,12 +54,12 @@
           <div class="mobile-menu" id="menu-button" data-menu>
             <ul class="mobile-menu__list">
               <li class="mobile-menu__item">
-                <a href="./index.html" class="mobile-menu__link"
-                  >Студия</a
-                >
+                <a href="./index.html" class="mobile-menu__link">Студия</a>
               </li>
               <li class="mobile-menu__item">
-                <a href="./portfolio.html" class="mobile-menu__link mobile-menu__link--active">Портфолио</a>
+                <a href="./portfolio.html" class="mobile-menu__link mobile-menu__link--active"
+                  >Портфолио</a
+                >
               </li>
               <li class="mobile-menu__item">
                 <a href="#" class="mobile-menu__link">Контакты</a>
@@ -140,7 +140,9 @@
               <a class="navigation__link" href="./index.html">Студия</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link navigation__link--active" href="./portfolio.html">Портфолио</a>
+              <a class="navigation__link navigation__link--active" href="./portfolio.html"
+                >Портфолио</a
+              >
             </li>
             <li class="navigation__item">
               <a class="navigation__link" href="#">Контакты</a>
@@ -274,77 +276,72 @@
             <li class="card__item">
               <a class="card__link" href="#">
                 <div class="card__thumb">
+                  <picture>
+                    <!-- Набір зображень для десктопних екранів -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/photos-our-portfolio-1_lg.webp    1x,
+                        ./images/portfolio/photos-our-portfolio-1_lg@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/photos-our-portfolio-1_lg.jpg    1x,
+                        ./images/portfolio/photos-our-portfolio-1_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
 
-              <picture>
-                <!-- Набір зображень для десктопних екранів -->
-                <source
-                  media="(min-width: 1200px)"
-                  srcset="
-                    ./images/portfolio/photos-our-portfolio-1_lg.webp    1x,
-                    ./images/portfolio/photos-our-portfolio-1_lg@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-                <source
-                  media="(min-width: 1200px)"
-                  srcset="
-                    ./images/portfolio/photos-our-portfolio-1_lg.jpg    1x,
-                    ./images/portfolio/photos-our-portfolio-1_lg@2x.jpg 2x
-                  "
-                  type="image/jpg"
-                />
+                    <!-- Набір зображень для планшетних екранів -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/photos-our-portfolio-1_md.webp    1x,
+                        ./images/portfolio/photos-our-portfolio-1_md@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/photos-our-portfolio-1_md.jpg    1x,
+                        ./images/portfolio/photos-our-portfolio-1_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
 
-                <!-- Набір зображень для планшетних екранів -->
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    ./images/portfolio/photos-our-portfolio-1_md.webp    1x,
-                    ./images/portfolio/photos-our-portfolio-1_md@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    ./images/portfolio/photos-our-portfolio-1_md.jpg    1x,
-                    ./images/portfolio/photos-our-portfolio-1_md@2x.jpg 2x
-                  "
-                  type="image/jpg"
-                />
+                    <!-- Набір зображень для мобільних екранів -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/photos-our-portfolio-1_sm.webp    1x,
+                        ./images/portfolio/photos-our-portfolio-1_sm@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/photos-our-portfolio-1_sm.jpg    1x,
+                        ./images/portfolio/photos-our-portfolio-1_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
 
-                <!-- Набір зображень для мобільних екранів -->
-                <source
-                  media="(max-width: 767px)"
-                  srcset="
-                    ./images/portfolio/photos-our-portfolio-1_sm.webp    1x,
-                    ./images/portfolio/photos-our-portfolio-1_sm@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-                <source
-                  media="(max-width: 767px)" 
-                  srcset="
-                    ./images/portfolio/photos-our-portfolio-1_sm.jpg    1x,
-                    ./images/portfolio/photos-our-portfolio-1_sm@2x.jpg 2x
-                  "
-                  type="image/jpg"
-                />
+                    <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
+                    <img
+                      class="card__image"
+                      src="./images/portfolio/photos-our-portfolio-1_sm.jpg"
+                      alt="Разработка веб-сайта Технокряк"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
 
-                <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
-                <img
-                  class="card__image"
-                  src="./images/portfolio/photos-our-portfolio-1_sm.jpg"
-                
-                   alt="Разработка веб-сайта Технокряк"
-                  width="450"
-                  height="294"
-                  loading="lazy"
-                />
-              </picture>
-
-
-
-                  
                   <div class="card__overlay">
                     <p class="card__description">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -363,78 +360,78 @@
               <a class="card__link" href="#">
                 <div class="scene">
                   <div class="scene__wrapper">
-              <picture>
-                <!-- Набір зображень для десктопних екранів -->
-                <source
-                  media="(min-width: 1200px)"
-                  srcset="
-                    ./images/portfolio/photos-our-portfolio-2_lg.webp    1x,
-                    ./images/portfolio/photos-our-portfolio-2_lg@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-                <source
-                  media="(min-width: 1200px)"
-                  srcset="
-                    ./images/portfolio/photos-our-portfolio-2_lg.jpg    1x,
-                    ./images/portfolio/photos-our-portfolio-2_lg@2x.jpg 2x
-                  "
-                  type="image/jpg"
-                />
+                    <picture>
+                      <!-- Набір зображень для десктопних екранів -->
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="
+                          ./images/portfolio/photos-our-portfolio-2_lg.webp    1x,
+                          ./images/portfolio/photos-our-portfolio-2_lg@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="
+                          ./images/portfolio/photos-our-portfolio-2_lg.jpg    1x,
+                          ./images/portfolio/photos-our-portfolio-2_lg@2x.jpg 2x
+                        "
+                        type="image/jpg"
+                      />
 
-                <!-- Набір зображень для планшетних екранів -->
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    ./images/portfolio/photos-our-portfolio-2_md.webp    1x,
-                    ./images/portfolio/photos-our-portfolio-2_md@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    ./images/portfolio/photos-our-portfolio-2_md.jpg    1x,
-                    ./images/portfolio/photos-our-portfolio-2_md@2x.jpg 2x
-                  "
-                  type="image/jpg"
-                />
+                      <!-- Набір зображень для планшетних екранів -->
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          ./images/portfolio/photos-our-portfolio-2_md.webp    1x,
+                          ./images/portfolio/photos-our-portfolio-2_md@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          ./images/portfolio/photos-our-portfolio-2_md.jpg    1x,
+                          ./images/portfolio/photos-our-portfolio-2_md@2x.jpg 2x
+                        "
+                        type="image/jpg"
+                      />
 
-                <!-- Набір зображень для мобільних екранів -->
-                <source
-                  media="(max-width: 767px)"
-                  srcset="
-                    ./images/portfolio/photos-our-portfolio-2_sm.webp    1x,
-                    ./images/portfolio/photos-our-portfolio-2_sm@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-                <source
-                  media="(max-width: 767px)" 
-                  srcset="
-                    ./images/portfolio/photos-our-portfolio-2_sm.jpg    1x,
-                    ./images/portfolio/photos-our-portfolio-2_sm@2x.jpg 2x
-                  "
-                  type="image/jpg"
-                />
+                      <!-- Набір зображень для мобільних екранів -->
+                      <source
+                        media="(max-width: 767px)"
+                        srcset="
+                          ./images/portfolio/photos-our-portfolio-2_sm.webp    1x,
+                          ./images/portfolio/photos-our-portfolio-2_sm@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+                      <source
+                        media="(max-width: 767px)"
+                        srcset="
+                          ./images/portfolio/photos-our-portfolio-2_sm.jpg    1x,
+                          ./images/portfolio/photos-our-portfolio-2_sm@2x.jpg 2x
+                        "
+                        type="image/jpg"
+                      />
 
-                <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
-                <img
-                  class="card__image"
-                  src="./images/portfolio/photos-our-portfolio-2_sm.jpg"                
-                  alt="Разработка дизайна постера"
-                  width="450"
-                  height="294"
-                  loading="lazy"
-                />
-              </picture>
+                      <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
+                      <img
+                        class="card__image"
+                        src="./images/portfolio/photos-our-portfolio-2_sm.jpg"
+                        alt="Разработка дизайна постера"
+                        width="450"
+                        height="294"
+                        loading="lazy"
+                      />
+                    </picture>
 
-                   
                     <div class="scene__face scene__face--back">
                       <p class="card__description">
                         Не дивіться на Україну, як на землю своїх батьків. Дивіться на неї, як на
-                        землю своїх дітей. І тоді прийдуть зміни…</p>
-                        <p class="card__description">Святослав Вакарчук</p>                      
+                        землю своїх дітей. І тоді прийдуть зміни…
+                      </p>
+                      <p class="card__description">Святослав Вакарчук</p>
                     </div>
                   </div>
                 </div>
@@ -454,76 +451,76 @@
             <li class="card__item">
               <a class="card__link" href="#">
                 <div class="card__thumb">
-              <picture>
-                <!-- Набір зображень для десктопних екранів -->
-                <source
-                  media="(min-width: 1200px)"
-                  srcset="
-                    ./images/portfolio/photos-our-portfolio-3_lg.webp    1x,
-                    ./images/portfolio/photos-our-portfolio-3_lg@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-                <source
-                  media="(min-width: 1200px)"
-                  srcset="
-                    ./images/portfolio/photos-our-portfolio-3_lg.jpg    1x,
-                    ./images/portfolio/photos-our-portfolio-3_lg@2x.jpg 2x
-                  "
-                  type="image/jpg"
-                />
+                  <picture>
+                    <!-- Набір зображень для десктопних екранів -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/photos-our-portfolio-3_lg.webp    1x,
+                        ./images/portfolio/photos-our-portfolio-3_lg@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/photos-our-portfolio-3_lg.jpg    1x,
+                        ./images/portfolio/photos-our-portfolio-3_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
 
-                <!-- Набір зображень для планшетних екранів -->
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    ./images/portfolio/photos-our-portfolio-3_md.webp    1x,
-                    ./images/portfolio/photos-our-portfolio-3_md@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    ./images/portfolio/photos-our-portfolio-3_md.jpg    1x,
-                    ./images/portfolio/photos-our-portfolio-3_md@2x.jpg 2x
-                  "
-                  type="image/jpg"
-                />
+                    <!-- Набір зображень для планшетних екранів -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/photos-our-portfolio-3_md.webp    1x,
+                        ./images/portfolio/photos-our-portfolio-3_md@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/photos-our-portfolio-3_md.jpg    1x,
+                        ./images/portfolio/photos-our-portfolio-3_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
 
-                <!-- Набір зображень для мобільних екранів -->
-                <source
-                  media="(max-width: 767px)"
-                  srcset="
-                    ./images/portfolio/photos-our-portfolio-3_sm.webp    1x,
-                    ./images/portfolio/photos-our-portfolio-3_sm@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-                <source
-                  media="(max-width: 767px)" 
-                  srcset="
-                    ./images/portfolio/photos-our-portfolio-3_sm.jpg    1x,
-                    ./images/portfolio/photos-our-portfolio-3_sm@2x.jpg 2x
-                  "
-                  type="image/jpg"
-                />
+                    <!-- Набір зображень для мобільних екранів -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/photos-our-portfolio-3_sm.webp    1x,
+                        ./images/portfolio/photos-our-portfolio-3_sm@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/photos-our-portfolio-3_sm.jpg    1x,
+                        ./images/portfolio/photos-our-portfolio-3_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
 
-                <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
-                <img
-                  class="card__image"
-                  src="./images/portfolio/photos-our-portfolio-3_sm.jpg"                
-                  alt="Создание приложения для ресторана Seafood"
-                  width="450"
-                  height="294"
-                  loading="lazy"
-                />
-              </picture>
+                    <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
+                    <img
+                      class="card__image"
+                      src="./images/portfolio/photos-our-portfolio-3_sm.jpg"
+                      alt="Создание приложения для ресторана Seafood"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div class="card__overlay">
                     <p class="card__description">
-                      Не той українець, у кого батьки українці, а той, у кого діти українці.</p>
-                     <p  class="card__description"> Михайло Голтишов</p>
+                      Не той українець, у кого батьки українці, а той, у кого діти українці.
                     </p>
+                    <p class="card__description">Михайло Голтишов</p>
                   </div>
                 </div>
                 <div class="card__text-wrapper">
@@ -535,76 +532,78 @@
             <li class="card__item">
               <a class="card__link" href="#">
                 <div class="card__thumb">
-              <picture>
-                <!-- Набір зображень для десктопних екранів -->
-                <source
-                  media="(min-width: 1200px)"
-                  srcset="
-                    ./images/portfolio/photos-our-portfolio-4_lg.webp    1x,
-                    ./images/portfolio/photos-our-portfolio-4_lg@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-                <source
-                  media="(min-width: 1200px)"
-                  srcset="
-                    ./images/portfolio/photos-our-portfolio-4_lg.jpg    1x,
-                    ./images/portfolio/photos-our-portfolio-4_lg@2x.jpg 2x
-                  "
-                  type="image/jpg"
-                />
+                  <picture>
+                    <!-- Набір зображень для десктопних екранів -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/photos-our-portfolio-4_lg.webp    1x,
+                        ./images/portfolio/photos-our-portfolio-4_lg@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/photos-our-portfolio-4_lg.jpg    1x,
+                        ./images/portfolio/photos-our-portfolio-4_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
 
-                <!-- Набір зображень для планшетних екранів -->
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    ./images/portfolio/photos-our-portfolio-4_md.webp    1x,
-                    ./images/portfolio/photos-our-portfolio-4_md@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    ./images/portfolio/photos-our-portfolio-4_md.jpg    1x,
-                    ./images/portfolio/photos-our-portfolio-4_md@2x.jpg 2x
-                  "
-                  type="image/jpg"
-                />
+                    <!-- Набір зображень для планшетних екранів -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/photos-our-portfolio-4_md.webp    1x,
+                        ./images/portfolio/photos-our-portfolio-4_md@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/photos-our-portfolio-4_md.jpg    1x,
+                        ./images/portfolio/photos-our-portfolio-4_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
 
-                <!-- Набір зображень для мобільних екранів -->
-                <source
-                  media="(max-width: 767px)"
-                  srcset="
-                    ./images/portfolio/photos-our-portfolio-4_sm.webp    1x,
-                    ./images/portfolio/photos-our-portfolio-4_sm@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-                <source
-                  media="(max-width: 767px)" 
-                  srcset="
-                    ./images/portfolio/photos-our-portfolio-4_sm.jpg    1x,
-                    ./images/portfolio/photos-our-portfolio-4_sm@2x.jpg 2x
-                  "
-                  type="image/jpg"
-                />
+                    <!-- Набір зображень для мобільних екранів -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/photos-our-portfolio-4_sm.webp    1x,
+                        ./images/portfolio/photos-our-portfolio-4_sm@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/photos-our-portfolio-4_sm.jpg    1x,
+                        ./images/portfolio/photos-our-portfolio-4_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
 
-                <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
-                <img
-                  class="card__image"
-                  src="./images/portfolio/photos-our-portfolio-4_sm.jpg"                
-                  alt="Маркетинг для проекта Prime"
-                  width="450"
-                  height="294"
-                  loading="lazy"
-                />
-              </picture>
-                 4 <div class="card__overlay">
+                    <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
+                    <img
+                      class="card__image"
+                      src="./images/portfolio/photos-our-portfolio-4_sm.jpg"
+                      alt="Маркетинг для проекта Prime"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
+                  4
+                  <div class="card__overlay">
                     <p class="card__description">
                       Оті дурні, що кричать "націоналіст!", не розуміють і ніколи не зрозуміють, що
-                      я зумів об'єднати любов до мого народу з любов'ю до всіх народів світу!</p>
-                      <p class="card__description">Остап Вишня</p>                  
+                      я зумів об'єднати любов до мого народу з любов'ю до всіх народів світу!
+                    </p>
+                    <p class="card__description">Остап Вишня</p>
                   </div>
                 </div>
                 <div class="card__text-wrapper">
@@ -617,71 +616,71 @@
               <a class="card__link" href="#">
                 <div class="card__thumb">
                   <picture>
-                <!-- Набір зображень для десктопних екранів -->
-                <source
-                  media="(min-width: 1200px)"
-                  srcset="
-                    ./images/portfolio/photos-our-portfolio-5_lg.webp    1x,
-                    ./images/portfolio/photos-our-portfolio-5_lg@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-                <source
-                  media="(min-width: 1200px)"
-                  srcset="
-                    ./images/portfolio/photos-our-portfolio-5_lg.jpg    1x,
-                    ./images/portfolio/photos-our-portfolio-5_lg@2x.jpg 2x
-                  "
-                  type="image/jpg"
-                />
+                    <!-- Набір зображень для десктопних екранів -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/photos-our-portfolio-5_lg.webp    1x,
+                        ./images/portfolio/photos-our-portfolio-5_lg@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/photos-our-portfolio-5_lg.jpg    1x,
+                        ./images/portfolio/photos-our-portfolio-5_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
 
-                <!-- Набір зображень для планшетних екранів -->
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    ./images/portfolio/photos-our-portfolio-5_md.webp    1x,
-                    ./images/portfolio/photos-our-portfolio-5_md@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    ./images/portfolio/photos-our-portfolio-5_md.jpg    1x,
-                    ./images/portfolio/photos-our-portfolio-5_md@2x.jpg 2x
-                  "
-                  type="image/jpg"
-                />
+                    <!-- Набір зображень для планшетних екранів -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/photos-our-portfolio-5_md.webp    1x,
+                        ./images/portfolio/photos-our-portfolio-5_md@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/photos-our-portfolio-5_md.jpg    1x,
+                        ./images/portfolio/photos-our-portfolio-5_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
 
-                <!-- Набір зображень для мобільних екранів -->
-                <source
-                  media="(max-width: 767px)"
-                  srcset="
-                    ./images/portfolio/photos-our-portfolio-5_sm.webp    1x,
-                    ./images/portfolio/photos-our-portfolio-5_sm@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-                <source
-                  media="(max-width: 767px)" 
-                  srcset="
-                    ./images/portfolio/photos-our-portfolio-5_sm.jpg    1x,
-                    ./images/portfolio/photos-our-portfolio-5_sm@2x.jpg 2x
-                  "
-                  type="image/jpg"
-                />
+                    <!-- Набір зображень для мобільних екранів -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/photos-our-portfolio-5_sm.webp    1x,
+                        ./images/portfolio/photos-our-portfolio-5_sm@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/photos-our-portfolio-5_sm.jpg    1x,
+                        ./images/portfolio/photos-our-portfolio-5_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
 
-                <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
-                <img
-                  class="card__image"
-                  src="./images/portfolio/photos-our-portfolio-5_sm.jpg"                
-                  alt="Разработка и запуск приложения Boxes"
-                  width="450"
-                  height="294"
-                  loading="lazy"
-                />
-              </picture>
-                                    <div class="card__overlay">
+                    <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
+                    <img
+                      class="card__image"
+                      src="./images/portfolio/photos-our-portfolio-5_sm.jpg"
+                      alt="Разработка и запуск приложения Boxes"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <div class="card__overlay">
                     <p class="card__description">
                       Ніхто нам не збудує держави, коли ми її самі не збудуємо, і ніхто з нас не
                       зробить нації, коли ми самі нацією не схочемо бути.
@@ -699,70 +698,70 @@
               <a class="card__link" href="#">
                 <div class="card__thumb">
                   <picture>
-                <!-- Набір зображень для десктопних екранів -->
-                <source
-                  media="(min-width: 1200px)"
-                  srcset="
-                    ./images/portfolio/photos-our-portfolio-6_lg.webp    1x,
-                    ./images/portfolio/photos-our-portfolio-6_lg@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-                <source
-                  media="(min-width: 1200px)"
-                  srcset="
-                    ./images/portfolio/photos-our-portfolio-6_lg.jpg    1x,
-                    ./images/portfolio/photos-our-portfolio-6_lg@2x.jpg 2x
-                  "
-                  type="image/jpg"
-                />
+                    <!-- Набір зображень для десктопних екранів -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/photos-our-portfolio-6_lg.webp    1x,
+                        ./images/portfolio/photos-our-portfolio-6_lg@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/photos-our-portfolio-6_lg.jpg    1x,
+                        ./images/portfolio/photos-our-portfolio-6_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
 
-                <!-- Набір зображень для планшетних екранів -->
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    ./images/portfolio/photos-our-portfolio-6_md.webp    1x,
-                    ./images/portfolio/photos-our-portfolio-6_md@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    ./images/portfolio/photos-our-portfolio-6_md.jpg    1x,
-                    ./images/portfolio/photos-our-portfolio-6_md@2x.jpg 2x
-                  "
-                  type="image/jpg"
-                />
+                    <!-- Набір зображень для планшетних екранів -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/photos-our-portfolio-6_md.webp    1x,
+                        ./images/portfolio/photos-our-portfolio-6_md@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/photos-our-portfolio-6_md.jpg    1x,
+                        ./images/portfolio/photos-our-portfolio-6_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
 
-                <!-- Набір зображень для мобільних екранів -->
-                <source
-                  media="(max-width: 767px)"
-                  srcset="
-                    ./images/portfolio/photos-our-portfolio-6_sm.webp    1x,
-                    ./images/portfolio/photos-our-portfolio-6_sm@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-                <source
-                  media="(max-width: 767px)" 
-                  srcset="
-                    ./images/portfolio/photos-our-portfolio-6_sm.jpg    1x,
-                    ./images/portfolio/photos-our-portfolio-6_sm@2x.jpg 2x
-                  "
-                  type="image/jpg"
-                />
+                    <!-- Набір зображень для мобільних екранів -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/photos-our-portfolio-6_sm.webp    1x,
+                        ./images/portfolio/photos-our-portfolio-6_sm@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/photos-our-portfolio-6_sm.jpg    1x,
+                        ./images/portfolio/photos-our-portfolio-6_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
 
-                <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
-                <img
-                  class="card__image"
-                  src="./images/portfolio/photos-our-portfolio-6_sm.jpg"                
-                  alt="Проектировка сайта «Inspiration has no Borders»"
-                  width="450"
-                  height="294"
-                  loading="lazy"
-                />
-              </picture>                  
+                    <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
+                    <img
+                      class="card__image"
+                      src="./images/portfolio/photos-our-portfolio-6_sm.jpg"
+                      alt="Проектировка сайта «Inspiration has no Borders»"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div class="card__overlay">
                     <pre class="card__pre">
                          Для всіх ти мертва і смішна, 
@@ -784,77 +783,77 @@
             <li class="card__item">
               <a class="card__link" href="#">
                 <div class="card__thumb">
-                   <picture>
-                <!-- Набір зображень для десктопних екранів -->
-                <source
-                  media="(min-width: 1200px)"
-                  srcset="
-                    ./images/portfolio/photos-our-portfolio-7_lg.webp    1x,
-                    ./images/portfolio/photos-our-portfolio-7_lg@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-                <source
-                  media="(min-width: 1200px)"
-                  srcset="
-                    ./images/portfolio/photos-our-portfolio-7_lg.jpg    1x,
-                    ./images/portfolio/photos-our-portfolio-7_lg@2x.jpg 2x
-                  "
-                  type="image/jpg"
-                />
+                  <picture>
+                    <!-- Набір зображень для десктопних екранів -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/photos-our-portfolio-7_lg.webp    1x,
+                        ./images/portfolio/photos-our-portfolio-7_lg@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/photos-our-portfolio-7_lg.jpg    1x,
+                        ./images/portfolio/photos-our-portfolio-7_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
 
-                <!-- Набір зображень для планшетних екранів -->
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    ./images/portfolio/photos-our-portfolio-7_md.webp    1x,
-                    ./images/portfolio/photos-our-portfolio-7_md@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    ./images/portfolio/photos-our-portfolio-7_md.jpg    1x,
-                    ./images/portfolio/photos-our-portfolio-7_md@2x.jpg 2x
-                  "
-                  type="image/jpg"
-                />
+                    <!-- Набір зображень для планшетних екранів -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/photos-our-portfolio-7_md.webp    1x,
+                        ./images/portfolio/photos-our-portfolio-7_md@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/photos-our-portfolio-7_md.jpg    1x,
+                        ./images/portfolio/photos-our-portfolio-7_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
 
-                <!-- Набір зображень для мобільних екранів -->
-                <source
-                  media="(max-width: 767px)"
-                  srcset="
-                    ./images/portfolio/photos-our-portfolio-7_sm.webp    1x,
-                    ./images/portfolio/photos-our-portfolio-7_sm@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-                <source
-                  media="(max-width: 767px)" 
-                  srcset="
-                    ./images/portfolio/photos-our-portfolio-7_sm.jpg    1x,
-                    ./images/portfolio/photos-our-portfolio-7_sm@2x.jpg 2x
-                  "
-                  type="image/jpg"
-                />
+                    <!-- Набір зображень для мобільних екранів -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/photos-our-portfolio-7_sm.webp    1x,
+                        ./images/portfolio/photos-our-portfolio-7_sm@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/photos-our-portfolio-7_sm.jpg    1x,
+                        ./images/portfolio/photos-our-portfolio-7_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
 
-                <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
-                <img
-                  class="card__image"
-                  src="./images/portfolio/photos-our-portfolio-7_sm.jpg"                
-                  alt="Разработка дизайна Limited Edition"
-                  width="450"
-                  height="294"
-                  loading="lazy"
-                />
-              </picture>                    
+                    <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
+                    <img
+                      class="card__image"
+                      src="./images/portfolio/photos-our-portfolio-7_sm.jpg"
+                      alt="Разработка дизайна Limited Edition"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div class="card__overlay">
                     <p class="card__description">
                       Бути українцем – це значить бути постійно в стані доказування свого права на
-                      існування.</p>
-                     <p  class="card__description">В. Винниченко</p>
+                      існування.
                     </p>
+                    <p class="card__description">В. Винниченко</p>
                   </div>
                 </div>
                 <div class="card__text-wrapper">
@@ -867,76 +866,76 @@
               <a class="card__link" href="#">
                 <div class="card__thumb">
                   <picture>
-                <!-- Набір зображень для десктопних екранів -->
-                <source
-                  media="(min-width: 1200px)"
-                  srcset="
-                    ./images/portfolio/photos-our-portfolio-8_lg.webp    1x,
-                    ./images/portfolio/photos-our-portfolio-8_lg@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-                <source
-                  media="(min-width: 1200px)"
-                  srcset="
-                    ./images/portfolio/photos-our-portfolio-8_lg.jpg    1x,
-                    ./images/portfolio/photos-our-portfolio-8_lg@2x.jpg 2x
-                  "
-                  type="image/jpg"
-                />
+                    <!-- Набір зображень для десктопних екранів -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/photos-our-portfolio-8_lg.webp    1x,
+                        ./images/portfolio/photos-our-portfolio-8_lg@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/photos-our-portfolio-8_lg.jpg    1x,
+                        ./images/portfolio/photos-our-portfolio-8_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
 
-                <!-- Набір зображень для планшетних екранів -->
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    ./images/portfolio/photos-our-portfolio-8_md.webp    1x,
-                    ./images/portfolio/photos-our-portfolio-8_md@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    ./images/portfolio/photos-our-portfolio-8_md.jpg    1x,
-                    ./images/portfolio/photos-our-portfolio-8_md@2x.jpg 2x
-                  "
-                  type="image/jpg"
-                />
+                    <!-- Набір зображень для планшетних екранів -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/photos-our-portfolio-8_md.webp    1x,
+                        ./images/portfolio/photos-our-portfolio-8_md@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/photos-our-portfolio-8_md.jpg    1x,
+                        ./images/portfolio/photos-our-portfolio-8_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
 
-                <!-- Набір зображень для мобільних екранів -->
-                <source
-                  media="(max-width: 767px)"
-                  srcset="
-                    ./images/portfolio/photos-our-portfolio-8_sm.webp    1x,
-                    ./images/portfolio/photos-our-portfolio-8_sm@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-                <source
-                  media="(max-width: 767px)" 
-                  srcset="
-                    ./images/portfolio/photos-our-portfolio-8_sm.jpg    1x,
-                    ./images/portfolio/photos-our-portfolio-8_sm@2x.jpg 2x
-                  "
-                  type="image/jpg"
-                />
+                    <!-- Набір зображень для мобільних екранів -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/photos-our-portfolio-8_sm.webp    1x,
+                        ./images/portfolio/photos-our-portfolio-8_sm@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/photos-our-portfolio-8_sm.jpg    1x,
+                        ./images/portfolio/photos-our-portfolio-8_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
 
-                <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
-                <img
-                  class="card__image"
-                  src="./images/portfolio/photos-our-portfolio-8_sm.jpg"                
-                  alt="Маркетинг для проекта LAB"
-                  width="450"
-                  height="294"
-                  loading="lazy"
-                />
-              </picture>                     
+                    <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
+                    <img
+                      class="card__image"
+                      src="./images/portfolio/photos-our-portfolio-8_sm.jpg"
+                      alt="Маркетинг для проекта LAB"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div class="card__overlay">
                     <p class="card__description">
                       Ми мусимо навчитися чути себе українцями – не галицькими, не буковинськими
-                      українцями, а українцями без офіційних кордонів.</p>
-                      <p  class="card__description">І. Франко</p>
+                      українцями, а українцями без офіційних кордонів.
                     </p>
+                    <p class="card__description">І. Франко</p>
                   </div>
                 </div>
                 <div class="card__text-wrapper">
@@ -949,75 +948,75 @@
               <a class="card__link" href="#">
                 <div class="card__thumb">
                   <picture>
-                <!-- Набір зображень для десктопних екранів -->
-                <source
-                  media="(min-width: 1200px)"
-                  srcset="
-                    ./images/portfolio/photos-our-portfolio-9_lg.webp    1x,
-                    ./images/portfolio/photos-our-portfolio-9_lg@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-                <source
-                  media="(min-width: 1200px)"
-                  srcset="
-                    ./images/portfolio/photos-our-portfolio-9_lg.jpg    1x,
-                    ./images/portfolio/photos-our-portfolio-9_lg@2x.jpg 2x
-                  "
-                  type="image/jpg"
-                />
+                    <!-- Набір зображень для десктопних екранів -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/photos-our-portfolio-9_lg.webp    1x,
+                        ./images/portfolio/photos-our-portfolio-9_lg@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/photos-our-portfolio-9_lg.jpg    1x,
+                        ./images/portfolio/photos-our-portfolio-9_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
 
-                <!-- Набір зображень для планшетних екранів -->
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    ./images/portfolio/photos-our-portfolio-9_md.webp    1x,
-                    ./images/portfolio/photos-our-portfolio-9_md@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    ./images/portfolio/photos-our-portfolio-9_md.jpg    1x,
-                    ./images/portfolio/photos-our-portfolio-9_md@2x.jpg 2x
-                  "
-                  type="image/jpg"
-                />
+                    <!-- Набір зображень для планшетних екранів -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/photos-our-portfolio-9_md.webp    1x,
+                        ./images/portfolio/photos-our-portfolio-9_md@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/photos-our-portfolio-9_md.jpg    1x,
+                        ./images/portfolio/photos-our-portfolio-9_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
 
-                <!-- Набір зображень для мобільних екранів -->
-                <source
-                  media="(max-width: 767px)"
-                  srcset="
-                    ./images/portfolio/photos-our-portfolio-9_sm.webp    1x,
-                    ./images/portfolio/photos-our-portfolio-9_sm@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-                <source
-                  media="(max-width: 767px)" 
-                  srcset="
-                    ./images/portfolio/photos-our-portfolio-9_sm.jpg    1x,
-                    ./images/portfolio/photos-our-portfolio-9_sm@2x.jpg 2x
-                  "
-                  type="image/jpg"
-                />
+                    <!-- Набір зображень для мобільних екранів -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/photos-our-portfolio-9_sm.webp    1x,
+                        ./images/portfolio/photos-our-portfolio-9_sm@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/photos-our-portfolio-9_sm.jpg    1x,
+                        ./images/portfolio/photos-our-portfolio-9_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
 
-                <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
-                <img
-                  class="card__image"
-                  src="./images/portfolio/photos-our-portfolio-9_sm.jpg"                
-                  alt="Разработка и тестирование приложения Growing Business"
-                  width="450"
-                  height="294"
-                  loading="lazy"
-                />
-              </picture>                      
+                    <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
+                    <img
+                      class="card__image"
+                      src="./images/portfolio/photos-our-portfolio-9_sm.jpg"
+                      alt="Разработка и тестирование приложения Growing Business"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div class="card__overlay">
                     <p class="card__description">
-                      «Біда України в тому, що нею керують ті, кому вона не потрібна».</p>
-                      <p  class="card__description">Михайло Грушевський</p>
+                      «Біда України в тому, що нею керують ті, кому вона не потрібна».
                     </p>
+                    <p class="card__description">Михайло Грушевський</p>
                   </div>
                 </div>
                 <div class="card__text-wrapper">
@@ -1030,7 +1029,7 @@
         </div>
       </section>
     </main>
-     <footer class="footer">
+    <footer class="footer">
       <div class="container footer__container">
         <div class="address__container">
           <a
