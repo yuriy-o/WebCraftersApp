@@ -13,6 +13,8 @@
 
   transform: translateX(100%);
 
+  transition: transform var(--transition-duration) var(--transition-timing-function);
+
   background-color: var(--main-background-color);
 
   @include mq(tablet) {

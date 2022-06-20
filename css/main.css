@@ -634,6 +634,10 @@ textarea {
           flex-direction: column;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
+  -webkit-transition: -webkit-transform var(--transition-duration) var(--transition-timing-function);
+  transition: -webkit-transform var(--transition-duration) var(--transition-timing-function);
+  transition: transform var(--transition-duration) var(--transition-timing-function);
+  transition: transform var(--transition-duration) var(--transition-timing-function), -webkit-transform var(--transition-duration) var(--transition-timing-function);
   background-color: var(--main-background-color);
 }
 
