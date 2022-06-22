@@ -27,6 +27,7 @@
   }
   @include mq(desktop) {
     margin-right: 70px;
+    text-align: left;
   }
 }
 
@@ -37,12 +38,6 @@
 
 .logo--white {
   color: var(--secondary-text-color);
-}
-
-.address {
-  @include mq(not-desktop) {
-    margin-bottom: 60px;
-  }
 }
 
 .address__item:not(:last-child) {
@@ -103,8 +98,9 @@
 }
 
 .subscribe {
-  // text-align: center;
-  // display: block;
+  @include mq(not-desktop) {
+    margin-top: 60px;
+  }
 }
 
 .subscribe__caption {

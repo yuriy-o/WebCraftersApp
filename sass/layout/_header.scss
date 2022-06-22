@@ -5,7 +5,7 @@
   width: 100vw;
   top: 0;
   left: 0;
-  z-index: 99;
+  z-index: 1;
 
   background-color: var(--main-background-color);
   border-bottom: 1px solid var(--header-board-color);
@@ -135,6 +135,8 @@
 
 .header__contact {
   @include mq(tablet) {
+    display: flex;
+    align-items: center;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -155,6 +157,18 @@
     align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
+  }
+}
+
+.header__contact-email {
+  @include mq(tablet-only) {
+    padding-top: 19px;
+  }
+}
+
+.header__contact-phone {
+  @include mq(tablet-only) {
+    padding-bottom: 19px;
   }
 }
 

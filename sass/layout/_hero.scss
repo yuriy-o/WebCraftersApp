@@ -6,9 +6,10 @@
   padding-bottom: 118px;
   margin-right: auto;
   margin-left: auto;
+  max-width: 1600px;
 
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
   background-size: cover;
 
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -60,8 +61,15 @@
   max-width: 480px;
   height: 400px;
 
-  @include mq(tablet) {
+  @include mq(mobile-only) {
     max-width: 768px;
+    width: 100%;
+    height: 400px;
+  }
+
+  @include mq(tablet) {
+    max-width: 1200px;
+    width: 100%;
     height: 400px;
   }
   @include mq(desktop) {
@@ -92,12 +100,13 @@
   margin-bottom: 30px;
   margin-right: auto;
   margin-left: auto;
+  width: 360px;
 
   color: var(--secondary-text-color);
 
-  @include mq(desktop) {
-    width: 360px;
-  }
+  // @include mq(tablet) {
+  //   width: 360px;
+  // }
 
   @include mq(desktop) {
     width: 696px;
