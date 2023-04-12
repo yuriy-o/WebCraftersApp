@@ -1948,6 +1948,7 @@ textarea {
   text-transform: uppercase;
   color: var(--secondary-text-color);
   margin-bottom: 20px;
+  text-align: left;
 }
 
 .subscribe__form {
